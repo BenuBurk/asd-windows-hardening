@@ -1,4 +1,4 @@
-<h5>Readme - asd-windows-hardening -  Version 1.0</h5> 
+<h5>Readme - asd-windows-hardening -  Version 1.1</h5> 
 
 # asd-windows-hardening
 A PowerShell script that implements the Australian Signals Directorate (ASD) Windows hardening recommendations along with integrated Microsoft Security Baseline deployment. 
@@ -90,17 +90,18 @@ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/BenuBurk/asd-windows-h
 <h2>📦 Microsoft Security Baseline Setup </h2>
 To use the baseline functionality:
 
-<h4>1. Download Microsoft Security Baselines:</h4>
+<h4>1. Download the required files:</h4>
 
 <li>Visit: https://www.microsoft.com/en-us/download/details.aspx?id=55319 </li>
-<li>Download the baseline matching your Windows version </li>
+<li>Download both baseline matching your Windows version and LGPO.zip </li>
 <li>Example: "Windows 11 version 24H2 Security Baseline" </li>
 
 
-<h4>2. Extract the baseline files: </h4>
+<h4>2. Extract both files: </h4>
 
-<li>Extract the ZIP file to any location (Downloads, Desktop, etc.) </li>
-<li>Ensure the folder structure contains Scripts\LGPO.exe</li>
+<li>Extract both ZIP files to the Downloads folder </li>
+<li>Place the LGPO.exe file that you find in the extracted LGPO* folder (e.g. LGPO30) in the extracted Baseline folder under "Scripts", e.g. "Windows 11 v24H2 Security Baseline\Scripts\<b>place LGPO.exe here"</b> </li>
+<li>Ensure the folder structure contains Scripts\LGPO.exe, e.g "Windows 11 v24H2 Security Baseline\Scripts\LGPO.exe"</li>
 
 
 <h4>3. Run the script: </h4>
